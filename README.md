@@ -23,5 +23,9 @@ Common use case include:
 - Call stack management
 
 
+2-pointer:
+When it is a SORTED array.
+
+
 
 
