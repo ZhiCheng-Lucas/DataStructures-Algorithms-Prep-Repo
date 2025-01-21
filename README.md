@@ -26,6 +26,9 @@ Common use case include:
 2-pointer:
 When it is a SORTED array.
 
+For 2pointer or sliding window, can consider trying a graph for better visualization of the problem.
+
+
 
 
 
