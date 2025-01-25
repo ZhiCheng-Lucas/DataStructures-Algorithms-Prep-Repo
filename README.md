@@ -73,3 +73,43 @@ def recursive_function(input):
     # 2. Use result to solve current step
     # 3. Return solution
 ```
+
+
+Trees.
+
+DFS - Stack (inorder, preorder and postorder)
+BFS - FIFO queue
+
+```
+def inorder_traversal(node):
+    if node:
+        # First traverse left subtree
+        inorder_traversal(node.left)
+        # Then visit the root
+        print(node.value)
+        # Finally traverse right subtree
+        inorder_traversal(node.right)
+```
+
+```
+def preorder_traversal(node):
+    if node:
+        # First visit the root
+        print(node.value)
+        # Then traverse left subtree
+        preorder_traversal(node.left)
+        # Finally traverse right subtree
+        preorder_traversal(node.right)
+
+```
+
+```
+def postorder_traversal(node):
+    if node:
+        # First traverse left subtree
+        postorder_traversal(node.left)
+        # Then traverse right subtree
+        postorder_traversal(node.right)
+        # Finally visit the root
+        print(node.value)
+```
