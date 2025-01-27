@@ -77,6 +77,8 @@ def recursive_function(input):
 
 Trees.
 
+For prefix matching etc, can consider a trie data structure 
+
 DFS - Stack (inorder, preorder and postorder)
 BFS - FIFO queue
 
