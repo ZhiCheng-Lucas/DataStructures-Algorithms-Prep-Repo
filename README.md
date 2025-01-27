@@ -6,6 +6,10 @@ Each question is divided into its separate Python file and contains a brief expl
 
 General Info:
 
+
+In Python classes, self refers to the instance of the class that's being created or operated on. It's a way for the object to reference itself
+
+
 Stacks: 
 
 Consider when:
