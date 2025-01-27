@@ -119,3 +119,10 @@ def postorder_traversal(node):
         # Finally visit the root
         print(node.value)
 ```
+
+
+Heaps:
+When talking about maximum/ minimum qns, consider a heap approach. See heapq in python.
+To simulate a maxheap in python, use negative values instead.
+eg. [2,3,4] becomes [-2,-3,-4]
+so 4 would be the minimum value.
