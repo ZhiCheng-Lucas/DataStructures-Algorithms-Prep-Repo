@@ -122,7 +122,18 @@ def postorder_traversal(node):
 
 
 Heaps:
+heapify is a o(n) function
 When talking about maximum/ minimum qns, consider a heap approach. See heapq in python.
 To simulate a maxheap in python, use negative values instead.
 eg. [2,3,4] becomes [-2,-3,-4]
 so 4 would be the minimum value.
+
+
+A heap is a useful data structure when it is necessary to repeatedly remove the object with the highest (or lowest) priority, or when insertions need to be interspersed with removals of the root node.
+
+
+Mention of k
+If you see a top or lowest k being mentioned in the question, it is usually a signal that a heap can be used to solve the problem, such as in Top K Frequent Elements.
+
+If you require the top k elements use a Min Heap of size k. Iterate through each element, pushing it into the heap (for python heapq, invert the value before pushing to find the max). Whenever the heap size exceeds k, remove the minimum element, that will guarantee that you have the k largest elements.
+
