@@ -225,3 +225,55 @@ A doesn't end before B starts: A[end] >= B[start]
 AND
 B doesn't end before A starts: B[end] >= A[start]
 
+
+
+Dynanmic Programming
+1. Optimal substructure. - Optimal solution to subproblems lead to the optimal solution
+2. Overlapping subproblems
+
+Some indicators are
+1. Suquential decision-making
+2. Greedy choice property
+3. State transition
+4. Path or array.
+5. Counting or maximizatino/minimizations
+
+
+Here's the text version of the recursion lecture slide:
+
+# Recursion
+## Structure → Technique
+
+### Start with the recurrence relation
+- Base case??? For what problem?
+- Actions → Recursive calls 
+- Consequences → Transitions
+- Contributions → Return Value
+- Affected variables → Parameters
+
+### Obey the rules of recursion
+1. Base cases must be correct
+2. Recursive calls shrink to a base case
+3. Assume recursive calls are correct
+
+### Build base cases from the calls
+- Name the function on its promises!
+- Avoid simulating/visualizing, it's painful
+- Recursion is naturally inductive
+- Read aloud and see if it makes sense
+
+### Main Ideas:
+Technique requires a solid understanding of where, why, and how.
+
+### Recursion
+- Where: Subtasks have the same shape
+- Why: To simplify a problem with induction
+- How: Use induction!!!
+
+### Additional Guidelines:
+- Do not think more than 1 recurrence down
+- Name a function on it promises to do
+- No prints or simulation, just read it aloud!
+
+### Consider this:
+You are one of two types of people: you can read recurrence relations or you are one of two types of people
