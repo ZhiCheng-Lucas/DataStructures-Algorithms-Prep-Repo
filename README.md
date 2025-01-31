@@ -213,7 +213,7 @@ class Solution:
 
 Intervals:
 - It might be helpful to draw a number line to visualize
-
+- Useful to sort based on START time.
 They don't overlap when either:
 
 A ends before B starts: A[end] < B[start]
