@@ -195,3 +195,20 @@ class Solution:
         dfs(0)    # Start from index 0
         return res
 ```
+
+
+
+Intervals:
+- It might be helpful to draw a number line to visualize
+
+They don't overlap when either:
+
+A ends before B starts: A[end] < B[start]
+B ends before A starts: B[end] < A[start]
+
+Therefore, they DO overlap when NEITHER of these is true. In other words, they overlap when:
+
+A doesn't end before B starts: A[end] >= B[start]
+AND
+B doesn't end before A starts: B[end] >= A[start]
+
