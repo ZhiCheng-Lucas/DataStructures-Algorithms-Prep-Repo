@@ -10,6 +10,19 @@ General Info:
 In Python classes, self refers to the instance of the class that's being created or operated on. It's a way for the object to reference itself
 
 
+lambda functions.
+lambda x,y: x+y
+Before the : represents the input. After the : represents the output or the expression.
+eg. 
+intervals = [[1,2], [2,1]]
+intervals.sort(key=lambda interval:interval[1]) 
+interval is the input (same as i in for i in intervals) and it will return interval[1] as the sorting key which is 2 and 1.
+Hence, it will be sorted into [[2,1] [1,2]]
+
+
+
+
+
 Stacks: 
 
 Consider when:
