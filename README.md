@@ -248,16 +248,25 @@ B doesn't end before A starts: B[end] >= A[start]
 
 
 
-Dynanmic Programming
-1. Optimal substructure. - Optimal solution to subproblems lead to the optimal solution
-2. Overlapping subproblems
+Graphs:
+2D matrix. 
+Adjacency list 
+
+
+
+
+
+
+Dynamic Programming
+1. Optimal substructure. - Optimal solution to subproblem lead to the optimal solution
+2. Overlapping subproblem
 
 Some indicators are
-1. Suquential decision-making
+1. Sequential decision-making
 2. Greedy choice property
 3. State transition
 4. Path or array.
-5. Counting or maximizatino/minimizations
+5. Counting or maximization/minimization
 
 
 Here's the text version of the recursion lecture slide:
@@ -296,5 +305,40 @@ Technique requires a solid understanding of where, why, and how.
 - Name a function on it promises to do
 - No prints or simulation, just read it aloud!
 
-### Consider this:
-You are one of two types of people: you can read recurrence relations or you are one of two types of people
+
+# Dynamic Programming
+*Technique → More Technique*
+
+## Requirements
+- Must have a recurrence relation
+  - Function must be pure: no side effects
+- Recurrence Relation < Recursive Execution
+
+## Time Complexity
+- (# Unique States) * (Cached Complexity)
+- # Unique States
+  - Size of recurrence relation
+  - Usually the product of parameter bounds
+- Cached Complexity
+  - What's the time complexity assuming recursive calls are O(1)?
+
+## DP = Decision Parameterization
+- Decisions are values to compute once
+- Decisions are not tasks to run every time
+- More Parameters → Higher Runtime
+- Minimize the parameters needed for a decision
+- Minimize the time to complete the decision
+
+## Main Ideas:
+- Recurrence relation != Recursive execution
+- A recurrence relation is a mathematical construct:
+  - It does not have side effects
+  - It does not "compute" anything
+  - It does not require recursive execution
+  - It's just a relationship between states
+
+## Dynamic programming:
+- Decomposes problems with recurrence relations
+- Recursive terms are values calculated once
+- Evaluates in a valid order of dependencies
+
