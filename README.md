@@ -4,6 +4,27 @@ A personal repository documenting my daily journey through LeetCode problems.
 Each question is divided into its separate Python file and contains a brief explanation of the question, my thoughts on the solution and explanation, as well as the expected time and space complexity, along with comments in the code.
 
 
+Techniques:
+1. Heap
+2. Two pointers
+3. Prefix sum
+4. Hashtable
+5. Segment Tree
+6. Union Find
+7. Trie
+8. Suffix Array
+9. Backtracking
+10. DFS
+11. Greedy
+12. DP
+13. Sliding Window
+14. Line Sweep 
+15. Rolling Hash
+16. Monostack
+17. Binary Search
+18. BFS
+
+
 General Info:
 
 
