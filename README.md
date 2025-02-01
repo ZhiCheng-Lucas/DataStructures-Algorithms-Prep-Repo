@@ -30,6 +30,8 @@ General Info:
 
 In Python classes, self refers to the instance of the class that's being created or operated on. It's a way for the object to reference itself
 
+For questions involving deep copies etc. 
+Consider creating a hashmap with the old node as the key and the newly created node as the value.
 
 lambda functions.
 lambda x,y: x+y
