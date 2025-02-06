@@ -2,7 +2,7 @@ class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         """
         Strategy:
-        - Use recursion with memoization to avoid recalculating subproblems
+        - Use recursion with memoization to avoid recalculating subproblem
         - At each step, choose the minimum cost between climbing from 1 or 2 steps below
         - The recurrence relation is: dp[n] = min(dp[n-1], dp[n-2]) + cost[n]
 
