@@ -77,9 +77,9 @@ Heaps
 
 
 1. Tries for word search
-2. Backtracking (look at [n-Queens problem](https://leetcode.com/problems/n-queens/) for reference)
-3. Greedy + Binary Search  (refer to this [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) for pattern)
-4. Divide and Conquer (look at [merge sort](https://leetcode.com/problems/merge-k-sorted-lists/description/?envType=problem-list-v2&envId=merge-sort) for a template)
+2. Backtracking 
+3. Greedy + Binary Search
+4. Divide and Conquer - merge sort 
 
 
 
