@@ -28,3 +28,36 @@ class Solution:
             ways[step] = ways[step + 1] + ways[step + 2]
 
         return ways[0]  # Return total ways from bottom to top
+
+
+# Recursive solution
+
+# class Solution:
+#     def climbStairs(self, n: int) -> int:
+#         '''
+#         - Each position represents the total ways to reach that step
+#         - To reach step n, we can either:
+#           1. Take a single step from position (n-1)
+#           2. Take a double step from position (n-2)
+#         - The total ways for step n is the sum of both possibilities
+
+#         Time Complexity: O(n) - Each step calculated once and stored in memo
+#         Space Complexity: O(n) - Memo dictionary + recursion stack
+#         '''
+
+#         memo = {}  # Cache to store previously calculated step combinations
+
+#         def rec(steps):
+#             # Base cases: only one way to reach 0 or 1 step
+#             if steps == 0 or steps == 1:
+#                 return 1
+
+#             # Return cached result if already calculated
+#             if steps in memo:
+#                 return memo[steps]
+
+#             # Current step combinations = combinations from (n-1) + combinations from (n-2)
+#             memo[steps] = rec(steps-1) + rec(steps-2)
+#             return memo[steps]
+
+#         return rec(n)
