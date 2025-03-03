@@ -1,10 +1,11 @@
 # DataStructures-Algorithm-Prep
+
 A personal repository documenting my daily journey through LeetCode problems.
 
 Each question is divided into its separate Python file and contains a brief explanation of the question, my thoughts on the solution and explanation, as well as the expected time and space complexity, along with comments in the code.
 
-
 Techniques:
+
 1. Heap
 2. Two pointers
 3. Prefix sum
@@ -18,14 +19,13 @@ Techniques:
 11. Greedy
 12. DP
 13. Sliding Window
-14. Line Sweep 
+14. Line Sweep
 15. Rolling Hash
 16. Monostack
 17. Binary Search
 18. BFS
 
-
-# Coding question patterns for all relevant DSA types:
+# Coding question patterns for all relevant DSA types
 
 Arrays and Strings
 
@@ -75,13 +75,10 @@ Heaps
 4. Sliding Window Median Pattern: Calculate median in a sliding window over a stream of numbers.
 5. Scheduling Pattern: Manage tasks or intervals using a heap for efficient scheduling.
 
-
 1. Tries for word search
-2. Backtracking 
+2. Backtracking
 3. Greedy + Binary Search
-4. Divide and Conquer - merge sort 
-
-
+4. Divide and Conquer - merge sort
 
 Time Management (20 min per question)
 
@@ -96,48 +93,38 @@ Plan
 Execute
 Discuss
 
-
-
-
-
-
 General Info:
-
 
 In Python classes, self refers to the instance of the class that's being created or operated on. It's a way for the object to reference itself
 
-For questions involving deep copies etc. 
+For questions involving deep copies etc.
 Consider creating a hashmap with the old node as the key and the newly created node as the value.
 
 lambda functions.
 lambda x,y: x+y
 Before the : represents the input. After the : represents the output or the expression.
-eg. 
+eg.
 intervals = [[1,2], [2,1]]
-intervals.sort(key=lambda interval:interval[1]) 
+intervals.sort(key=lambda interval:interval[1])
 interval is the input (same as i in for i in intervals) and it will return interval[1] as the sorting key which is 2 and 1.
 Hence, it will be sorted into [[2,1] [1,2]]
 
-
-
-
-
-Stacks: 
+Stacks:
 
 Consider when:
 Expression Evaluation and Parsing or just Evaluation.
 
 1. Last-In-First-Out
 2. State/History Tracking
-3. Nested/Hierarchical 
+3. Nested/Hierarchical
     - A stack is ideal because it naturally tracks the "most recently opened" item
     - Expression Evaluation and Parsing can fall under this as expression has inherent nesting through parentheses, and the order of operations creates a natural hierarchy
 
 Common use case include:
+
 - Expression Evaluation and Parsing
 - Depth-First Search (DFS) Implementation
 - Call stack management
-
 
 2-pointer:
 When it is a SORTED array.
@@ -150,19 +137,13 @@ Sentinel/dummy nodes:
 Adding a sentinel/dummy node at the head and/or tail might help to handle many edge cases where operations have to be performed at the head or the tail. The presence of dummy nodes essentially ensures that operations will never be done on the head or the tail, thereby removing a lot of headache in writing conditional checks to dealing with null pointers. Be sure to remember to remove them at the end of the operation.
 
 Two pointers:
+
 1. Getting the kth from last node - Have two pointers, where one is k nodes ahead of the other. When the node ahead reaches the end, the other node is k nodes behind
 2. Detecting cycles - Have two pointers, where one pointer increments twice as much as the other, if the two pointers meet, means that there is a cycle
 3. Getting the middle node - Have two pointers, where one pointer increments twice as much as the other. When the faster node reaches the end of the list, the slower node will be at the middle
 
 Using space:
-Many linked list problems can be easily solved by creating a new linked list and adding nodes to the new linked list with the final result. However, this takes up extra space and makes the question much less challenging. 
-
-
-
-
-
-
-
+Many linked list problems can be easily solved by creating a new linked list and adding nodes to the new linked list with the final result. However, this takes up extra space and makes the question much less challenging.
 
 All recursive functions contains two parts:
 
@@ -190,10 +171,9 @@ def recursive_function(input):
     # 3. Return solution
 ```
 
-
 Trees.
 
-For prefix matching etc, can consider a trie data structure 
+For prefix matching etc, can consider a trie data structure
 
 DFS - Stack (inorder, preorder and postorder)
 BFS - FIFO queue
@@ -232,7 +212,6 @@ def postorder_traversal(node):
         print(node.value)
 ```
 
-
 Heaps:
 heapify is a o(n) function
 When talking about maximum/ minimum qns, consider a heap approach. See heapq in python.
@@ -240,25 +219,22 @@ To simulate a maxheap in python, use negative values instead.
 eg. [2,3,4] becomes [-2,-3,-4]
 so 4 would be the minimum value.
 
-
 A heap is a useful data structure when it is necessary to repeatedly remove the object with the highest (or lowest) priority, or when insertions need to be interspersed with removals of the root node.
-
 
 Mention of k
 If you see a top or lowest k being mentioned in the question, it is usually a signal that a heap can be used to solve the problem, such as in Top K Frequent Elements.
 
 If you require the top k elements use a Min Heap of size k. Iterate through each element, pushing it into the heap (for python heapq, invert the value before pushing to find the max). Whenever the heap size exceeds k, remove the minimum element, that will guarantee that you have the k largest elements.
 
-
-
 Backtracking:
 For combination/permutation problems, subset problems.
 Consider backtracking.
 
-Draw a decision tree. 
+Draw a decision tree.
 Then dfs.
 
 Example.
+
 ```
 
 class Solution:
@@ -308,9 +284,8 @@ class Solution:
         return res
 ```
 
-
-
 Intervals:
+
 - It might be helpful to draw a number line to visualize
 - Useful to sort based on START time.
 They don't overlap when either:
@@ -324,90 +299,97 @@ A doesn't end before B starts: A[end] >= B[start]
 AND
 B doesn't end before A starts: B[end] >= A[start]
 
-
-
 Graphs:
-2D matrix. 
-Adjacency list 
-
-
-
-
-
+2D matrix.
+Adjacency list
 
 Dynamic Programming
+
 1. Optimal substructure. - Optimal solution to subproblem lead to the optimal solution
 2. Overlapping subproblem
 
 Some indicators are
+
 1. Sequential decision-making
 2. Greedy choice property
 3. State transition
 4. Path or array.
 5. Counting or maximization/minimization
 
-
 Here's the text version of the recursion lecture slide:
 
 # Recursion
+
 ## Structure → Technique
 
 ### Start with the recurrence relation
+
 - Base case??? For what problem?
-- Actions → Recursive calls 
+- Actions → Recursive calls
 - Consequences → Transitions
 - Contributions → Return Value
 - Affected variables → Parameters
 
 ### Obey the rules of recursion
+
 1. Base cases must be correct
 2. Recursive calls shrink to a base case
 3. Assume recursive calls are correct
 
 ### Build base cases from the calls
+
 - Name the function on its promises!
 - Avoid simulating/visualizing, it's painful
 - Recursion is naturally inductive
 - Read aloud and see if it makes sense
 
-### Main Ideas:
+### Main Ideas
+
 Technique requires a solid understanding of where, why, and how.
 
 ### Recursion
+
 - Where: Subtasks have the same shape
 - Why: To simplify a problem with induction
 - How: Use induction!!!
 
-### Additional Guidelines:
+### Additional Guidelines
+
 - Do not think more than 1 recurrence down
 - Name a function on it promises to do
 - No prints or simulation, just read it aloud!
 
-
 # Dynamic Programming
+
 *Technique → More Technique*
 
 ## Requirements
+
 - Must have a recurrence relation
   - Function must be pure: no side effects
 - Recurrence Relation < Recursive Execution
 
 ## Time Complexity
+
 - (# Unique States) * (Cached Complexity)
+
 - # Unique States
+
   - Size of recurrence relation
   - Usually the product of parameter bounds
 - Cached Complexity
   - What's the time complexity assuming recursive calls are O(1)?
 
 ## DP = Decision Parameterization
+
 - Decisions are values to compute once
 - Decisions are not tasks to run every time
 - More Parameters → Higher Runtime
 - Minimize the parameters needed for a decision
 - Minimize the time to complete the decision
 
-## Main Ideas:
+## Main Ideas
+
 - Recurrence relation != Recursive execution
 - A recurrence relation is a mathematical construct:
   - It does not have side effects
@@ -415,8 +397,8 @@ Technique requires a solid understanding of where, why, and how.
   - It does not require recursive execution
   - It's just a relationship between states
 
-## Dynamic programming:
+## Dynamic programming
+
 - Decomposes problems with recurrence relations
 - Recursive terms are values calculated once
 - Evaluates in a valid order of dependencies
-
