@@ -1,38 +1,35 @@
 # DataStructures-Algorithm-Prep
 
 A personal repository documenting my daily journey through LeetCode problems.
-
 Each question is divided into its separate Python file and contains a brief explanation of the question, my thoughts on the solution and explanation, as well as the expected time and space complexity, along with comments in the code.
 
-Techniques:
-
-1. Heap
-2. Two pointers
-3. Prefix sum
-4. Hashtable
-5. Segment Tree
-6. Union Find
-7. Trie
-8. Suffix Array
-9. Backtracking
-10. DFS
-11. Greedy
-12. DP
-13. Sliding Window
-14. Line Sweep
-15. Rolling Hash
-16. Monostack
-17. Binary Search
-18. BFS
+Useful links:
 
 # Coding question patterns for all relevant DSA types
 
-Arrays and Strings
+Arrays
 
 1. Two Pointers: Used for finding pairs or elements that meet specific criteria.
 2. Sliding Window: Maintains a subset of elements within a larger dataset.
 3. Binary Search: Efficient searching in sorted arrays.
 4. Prefix Sum: Precompute cumulative sums for quick range queries.
+5. Stacks and queues - LIFO/FIFO data structures
+    Stacks
+
+    1. Parentheses matching: Validate balanced brackets.
+    2. Monotonic stack: Maintain increasing/decreasing order for next greater/smaller element problems.
+    3. Expression evaluation: Evaluate arithmetic expressions.
+
+    Queues
+
+    1. BFS implementation: Level-order traversal in graphs and trees.
+    2. Task scheduling: Manage order of operations.
+    3. Sliding window problems: Maintain a window of elements.
+
+Strings:
+
+1. Trie/prefix tree - Character-based search tree (Word Search)
+2. Count number of frequencies - Hashmap character counting
 
 Trees
 
@@ -54,20 +51,14 @@ Graphs
 2. Breadth-First Search (BFS): Explore nodes level by level.
 3. Topological Sort: Order nodes in a directed acyclic graph.
 4. Union Find: Detect cycles and connect components.
+5. Adjacency matrix (dfs / bfs) - Grid representation
+6. Adjacency list - Node-edge representation
+7. Topological sort - Directed dependency ordering
+8. Dijkstra - Shortest path algorithm
+9. Prim - Minimum spanning tree
+10. Kruskal - Minimum spanning tree via edges
 
-Stacks
-
-1. Parentheses matching: Validate balanced brackets.
-2. Monotonic stack: Maintain increasing/decreasing order for next greater/smaller element problems.
-3. Expression evaluation: Evaluate arithmetic expressions.
-
-Queues
-
-1. BFS implementation: Level-order traversal in graphs and trees.
-2. Task scheduling: Manage order of operations.
-3. Sliding window problems: Maintain a window of elements.
-
-Heaps
+Heaps - Efficient min/max extractions
 
 1. Top K Elements Pattern: Find or manipulate the K largest/smallest elements in a collection.
 2. Merge K Sorted Pattern: Combine K sorted lists or arrays into a single sorted list.
@@ -75,11 +66,22 @@ Heaps
 4. Sliding Window Median Pattern: Calculate median in a sliding window over a stream of numbers.
 5. Scheduling Pattern: Manage tasks or intervals using a heap for efficient scheduling.
 
-1. Tries for word search
-2. Backtracking
-3. Greedy + Binary Search
-4. Divide and Conquer - merge sort
+Backtracking:
 
+1. Subsets - Generate all possible subsets
+2. Permutation - Generate all possible arrangements
+3. Combination - Generate specific groupings
+4. Tree maze - Path finding with constraints
+
+Greedy (Kandane - Maximum subarray sum)
+
+Linked Lists:
+
+1. Singly linked lists - One-directional node connections
+2. Doubly linked lists - Bidirectional node connections
+3. Fast and slow pointers - Cycle detection technique
+
+Dynamic programming - Optimization via subproblems
 Time Management (20 min per question)
 
 5 min: Problem understanding, edge cases, clarifying questions
