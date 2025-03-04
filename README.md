@@ -7,45 +7,46 @@ Useful links:
 
 # Coding question patterns for all relevant DSA types
 
-Arrays
+[ARRAYS](#arrays)
 
 1. Two Pointers: Used for finding pairs or elements that meet specific criteria.
 2. Sliding Window: Maintains a subset of elements within a larger dataset.
 3. Binary Search: Efficient searching in sorted arrays.
 4. Prefix Sum: Precompute cumulative sums for quick range queries.
 5. Stacks and queues - LIFO/FIFO data structures
-    Stacks
+
+    [STACKS](#stacks)
 
     1. Parentheses matching: Validate balanced brackets.
     2. Monotonic stack: Maintain increasing/decreasing order for next greater/smaller element problems.
     3. Expression evaluation: Evaluate arithmetic expressions.
 
-    Queues
+    [QUEUES](#queues)
 
     1. BFS implementation: Level-order traversal in graphs and trees.
     2. Task scheduling: Manage order of operations.
     3. Sliding window problems: Maintain a window of elements.
 
-Strings:
+[STRINGS](#strings)
 
 1. Trie/prefix tree - Character-based search tree (Word Search)
 2. Count number of frequencies - Hashmap character counting
 
-Trees
+[TREES](#trees)
 
 1. Depth-First Search (DFS): Preorder, inorder, and postorder traversals.
 2. Breadth-First Search (BFS): Level-order traversal.
 3. Binary Search Tree (BST) operations: Insertion, deletion, and validation.
 4. Tree construction: From preorder/inorder or postorder/inorder traversals.
 
-Hashtables
+[HASHTABLES](#hashtables)
 
 1. Frequency counting: Track occurrences of elements.
 2. Two Sum pattern: Find pairs with a specific sum.
 3. Anagram detection: Compare character frequencies.
 4. Caching: Store computed results for quick lookup.
 
-Graphs
+[GRAPHS](#graphs)
 
 1. Depth-First Search (DFS): Explore paths deeply before backtracking.
 2. Breadth-First Search (BFS): Explore nodes level by level.
@@ -58,7 +59,7 @@ Graphs
 9. Prim - Minimum spanning tree
 10. Kruskal - Minimum spanning tree via edges
 
-Heaps - Efficient min/max extractions
+[HEAPS](#heaps)
 
 1. Top K Elements Pattern: Find or manipulate the K largest/smallest elements in a collection.
 2. Merge K Sorted Pattern: Combine K sorted lists or arrays into a single sorted list.
@@ -66,20 +67,44 @@ Heaps - Efficient min/max extractions
 4. Sliding Window Median Pattern: Calculate median in a sliding window over a stream of numbers.
 5. Scheduling Pattern: Manage tasks or intervals using a heap for efficient scheduling.
 
-Backtracking:
+[BACKTRACKING](#backtracking)
 
 1. Subsets - Generate all possible subsets
 2. Permutation - Generate all possible arrangements
 3. Combination - Generate specific groupings
 4. Tree maze - Path finding with constraints
 
-Greedy (Kandane - Maximum subarray sum)
+[GREEDY](#greedy)
 
-Linked Lists:
+1. Kandane - Maximum subarray sum
+
+[LINKED LISTS](#linked-lists)
 
 1. Singly linked lists - One-directional node connections
 2. Doubly linked lists - Bidirectional node connections
 3. Fast and slow pointers - Cycle detection technique
+
+## ARRAYS
+
+## STACKS
+
+## QUEUES
+
+## STRINGS
+
+## TREES
+
+## HASHTABLES
+
+## GRAPHS
+
+## HEAPS
+
+## BACKTRACKING
+
+## GREEDY
+
+## LINKED LISTS
 
 Dynamic programming - Optimization via subproblems
 Time Management (20 min per question)
