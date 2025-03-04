@@ -4,6 +4,8 @@ A personal repository documenting my daily journey through LeetCode problems.
 Each question is divided into its separate Python file and contains a brief explanation of the question, my thoughts on the solution and explanation, as well as the expected time and space complexity, along with comments in the code.
 
 Useful links:
+<https://neetcode.io/roadmap>
+<https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/>
 
 # Coding question patterns for all relevant DSA types
 
