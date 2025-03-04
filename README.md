@@ -71,10 +71,19 @@ Useful links:
 
 [BACKTRACKING](#backtracking)
 
-1. Subsets - Generate all possible subsets
-2. Permutation - Generate all possible arrangements
-3. Combination - Generate specific groupings
-4. Tree maze - Path finding with constraints
+1. **Subsets** - Generate all possible subsets
+   * Creates every possible subset from a given set, including empty set and the complete set.
+
+2. **Permutation** - Generate all possible arrangements (Order matters - 123 and 321 are different)
+   * P(n,r) = n! / (n-r)!
+   * This formula calculates the number of ways to arrange r items from a set of n items where order matters. Unlike combinations, each different arrangement counts as a distinct permutation.
+
+3. **Combination** - Generate specific groupings (Order doesn't matter - 123 and 321 are the same)
+   * C(n,r) = n! / [r! × (n-r)!]
+   * This formula calculates the number of ways to select r items from a set of n items where order doesn't matter. The factorials account for all possible arrangements being counted as a single combination.
+
+4. **Tree maze** - Path finding with constraints
+   * Navigates through decision trees to find paths that satisfy given constraints.
 
 [GREEDY](#greedy)
 
@@ -146,14 +155,14 @@ Expression Evaluation and Parsing or just Evaluation.
 1. Last-In-First-Out
 2. State/History Tracking
 3. Nested/Hierarchical
-    - A stack is ideal because it naturally tracks the "most recently opened" item
-    - Expression Evaluation and Parsing can fall under this as expression has inherent nesting through parentheses, and the order of operations creates a natural hierarchy
+    * A stack is ideal because it naturally tracks the "most recently opened" item
+    * Expression Evaluation and Parsing can fall under this as expression has inherent nesting through parentheses, and the order of operations creates a natural hierarchy
 
 Common use case include:
 
-- Expression Evaluation and Parsing
-- Depth-First Search (DFS) Implementation
-- Call stack management
+* Expression Evaluation and Parsing
+* Depth-First Search (DFS) Implementation
+* Call stack management
 
 2-pointer:
 When it is a SORTED array.
@@ -315,8 +324,8 @@ class Solution:
 
 Intervals:
 
-- It might be helpful to draw a number line to visualize
-- Useful to sort based on START time.
+* It might be helpful to draw a number line to visualize
+* Useful to sort based on START time.
 They don't overlap when either:
 
 A ends before B starts: A[end] < B[start]
@@ -353,11 +362,11 @@ Here's the text version of the recursion lecture slide:
 
 ### Start with the recurrence relation
 
-- Base case??? For what problem?
-- Actions → Recursive calls
-- Consequences → Transitions
-- Contributions → Return Value
-- Affected variables → Parameters
+* Base case??? For what problem?
+* Actions → Recursive calls
+* Consequences → Transitions
+* Contributions → Return Value
+* Affected variables → Parameters
 
 ### Obey the rules of recursion
 
@@ -367,10 +376,10 @@ Here's the text version of the recursion lecture slide:
 
 ### Build base cases from the calls
 
-- Name the function on its promises!
-- Avoid simulating/visualizing, it's painful
-- Recursion is naturally inductive
-- Read aloud and see if it makes sense
+* Name the function on its promises!
+* Avoid simulating/visualizing, it's painful
+* Recursion is naturally inductive
+* Read aloud and see if it makes sense
 
 ### Main Ideas
 
@@ -378,15 +387,15 @@ Technique requires a solid understanding of where, why, and how.
 
 ### Recursion
 
-- Where: Subtasks have the same shape
-- Why: To simplify a problem with induction
-- How: Use induction!!!
+* Where: Subtasks have the same shape
+* Why: To simplify a problem with induction
+* How: Use induction!!!
 
 ### Additional Guidelines
 
-- Do not think more than 1 recurrence down
-- Name a function on it promises to do
-- No prints or simulation, just read it aloud!
+* Do not think more than 1 recurrence down
+* Name a function on it promises to do
+* No prints or simulation, just read it aloud!
 
 # Dynamic Programming
 
@@ -394,40 +403,40 @@ Technique requires a solid understanding of where, why, and how.
 
 ## Requirements
 
-- Must have a recurrence relation
-  - Function must be pure: no side effects
-- Recurrence Relation < Recursive Execution
+* Must have a recurrence relation
+  * Function must be pure: no side effects
+* Recurrence Relation < Recursive Execution
 
 ## Time Complexity
 
-- (# Unique States) * (Cached Complexity)
+* (# Unique States) * (Cached Complexity)
 
-- # Unique States
+* # Unique States
 
-  - Size of recurrence relation
-  - Usually the product of parameter bounds
-- Cached Complexity
-  - What's the time complexity assuming recursive calls are O(1)?
+  * Size of recurrence relation
+  * Usually the product of parameter bounds
+* Cached Complexity
+  * What's the time complexity assuming recursive calls are O(1)?
 
 ## DP = Decision Parameterization
 
-- Decisions are values to compute once
-- Decisions are not tasks to run every time
-- More Parameters → Higher Runtime
-- Minimize the parameters needed for a decision
-- Minimize the time to complete the decision
+* Decisions are values to compute once
+* Decisions are not tasks to run every time
+* More Parameters → Higher Runtime
+* Minimize the parameters needed for a decision
+* Minimize the time to complete the decision
 
 ## Main Ideas
 
-- Recurrence relation != Recursive execution
-- A recurrence relation is a mathematical construct:
-  - It does not have side effects
-  - It does not "compute" anything
-  - It does not require recursive execution
-  - It's just a relationship between states
+* Recurrence relation != Recursive execution
+* A recurrence relation is a mathematical construct:
+  * It does not have side effects
+  * It does not "compute" anything
+  * It does not require recursive execution
+  * It's just a relationship between states
 
 ## Dynamic programming
 
-- Decomposes problems with recurrence relations
-- Recursive terms are values calculated once
-- Evaluates in a valid order of dependencies
+* Decomposes problems with recurrence relations
+* Recursive terms are values calculated once
+* Evaluates in a valid order of dependencies
