@@ -6,6 +6,30 @@ Each question is divided into its separate Python file and contains a brief expl
 Useful links:
 <https://neetcode.io/roadmap>
 <https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/>
+<https://datalemur.com/sql-tutorial/query-order-of-execution>
+
+## SQL Info
+
+### Order of execution
+
+1. FROM clause (including JOINs with ON conditions)
+2. WHERE clause
+3. GROUP BY clause
+4. HAVING clause
+5. SELECT clause
+6. ORDER BY clause
+7. LIMIT/OFFSET clauses
+
+### Order of writing
+
+1. SELECT clause (columns to retrieve)
+2. FROM clause (tables to query)
+3. JOIN clauses with ON conditions (table relationships)
+4. WHERE clause (row filtering conditions)
+5. GROUP BY clause (aggregation)
+6. HAVING clause (filtering aggregated results)
+7. ORDER BY clause (sorting results)
+8. LIMIT/OFFSET clauses (restricting number of results)
 
 # Coding question patterns for all relevant DSA types
 
