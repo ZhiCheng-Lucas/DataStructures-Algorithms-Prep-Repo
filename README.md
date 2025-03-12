@@ -31,6 +31,17 @@ Useful links:
 7. ORDER BY clause (sorting results)
 8. LIMIT/OFFSET clauses (restricting number of results)
 
+### Date
+
+-- Add 1 day
+SELECT date_column + INTERVAL '1 day' FROM table_name;
+
+-- Add 3 months
+SELECT date_column + INTERVAL '3 months' FROM table_name;
+
+-- Add multiple intervals
+SELECT date_column + INTERVAL '1 year 2 months 3 days' FROM table_name;
+
 # Coding question patterns for all relevant DSA types
 
 [ARRAYS](#arrays)
