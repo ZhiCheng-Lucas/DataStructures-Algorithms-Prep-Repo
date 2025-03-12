@@ -31,6 +31,11 @@ Useful links:
 7. ORDER BY clause (sorting results)
 8. LIMIT/OFFSET clauses (restricting number of results)
 
+### General info
+
+For rounding to decimal, requires ":: numeric"
+ROUND(value::numeric, decimal_places)
+
 ### Date
 
 -- Add 1 day
